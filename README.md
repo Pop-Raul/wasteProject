@@ -1,12 +1,21 @@
-# React + Vite
+# Waste Skip Selection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive web application built with **Vite** and **React**, designed to help users select an appropriate skip size for their waste disposal needs.
 
-Currently, two official plugins are available:
+# Technology
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite** – chosen for its lightning-fast build time and modern development experience.
+- **Axios** – used to perform a `GET` request to an external API that provides skip data based on location.
+- **Material UI (MUI)** – selected as the UI component library for its ease of use, rich component set, and out-of-the-box responsive design system.
 
-## Expanding the ESLint configuration
+## 📦 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Live API Integration**: Data is fetched dynamically from  
+  [`https://app.wewantwaste.co.uk/api/skips/by-location`](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft), using Axios.
+  
+- **Responsive Design**: Works seamlessly on both desktop and mobile.
+
+- **Skip Selection**: Users can view skip options, including size and pricing, and select the most suitable one.
+
+- **Component-Based Architecture**: The app uses reusable React components like `SkipCard` and `SkipSelectionPage` for modular and maintainable code.
+
